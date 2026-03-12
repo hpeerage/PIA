@@ -5,26 +5,14 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-    const [images, setImages] = useState<string[]>([]);
+    const [images] = useState<string[]>([
+        "/PIA/images/hero_bg_01.png",
+        "/PIA/images/hero_bg_02.png",
+        "/PIA/images/hero_bg_03.png",
+        "/PIA/images/hero_bg_04.png",
+        "/PIA/images/hero_bg_05.png",
+    ]);
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        async function fetchImages() {
-            try {
-                const res = await fetch("/api/hero-images");
-                const data = await res.json();
-                if (data.images && data.images.length > 0) {
-                    setImages(data.images);
-                } else {
-                    setImages(['https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop']);
-                }
-            } catch (error) {
-                console.error("Failed to fetch hero images:", error);
-                setImages(['https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop']);
-            }
-        }
-        fetchImages();
-    }, []);
 
     useEffect(() => {
         if (images.length <= 1) return;
