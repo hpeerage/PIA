@@ -19,7 +19,7 @@ export default function HeroSection() {
 
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // 5초마다 배경 교체
+        }, 8000); // 8초마다 배경 교체
 
         return () => clearInterval(interval);
     }, [images]);
@@ -31,10 +31,10 @@ export default function HeroSection() {
             {images.map((src, index) => (
                 <div
                     key={src}
-                    className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+                    className={`absolute inset-0 bg-cover bg-center bg-no-repeat ease-in-out ${
                         index === currentIndex ? "opacity-100 scale-105 animate-kenburns" : "opacity-0 scale-100"
                     }`}
-                    style={{ backgroundImage: `url("${src}")` }}
+                    style={{ backgroundImage: `url("${src}")`, transition: "opacity 2s ease-in-out" }}
                 ></div>
             ))}
 
