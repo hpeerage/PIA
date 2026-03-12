@@ -36,7 +36,7 @@ export default function BodyguardPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1">
                             <div className="w-full h-[500px] bg-slate-100 dark:bg-neutral-900 rounded-2xl overflow-hidden relative group shadow-md border border-gray-100 dark:border-neutral-800">
-                                <img src="/images/bodyguard_training.jpg" alt="경호 요원 훈련 이미지" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                <img src="/PIA/images/bodyguard_training.jpg" alt="경호 요원 훈련 이미지" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-white">
                                     <h4 className="font-bold text-2xl flex items-center gap-2 mb-2"><Shield size={24}/> Private Security Guard</h4>
                                     <p className="text-gray-300">최첨단 장비와 무술을 결합한 민간 보안의 최고봉</p>
