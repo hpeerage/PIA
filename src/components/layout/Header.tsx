@@ -24,7 +24,7 @@ export default function Header() {
                     {/* Logo Main */}
                     <Link href="/" className="flex items-center gap-3">
                         <Image 
-                            src="/PIA_Logo.png" 
+                            src="/PIA/PIA_Logo.png" 
                             alt="한국공인탐정협회 PIA 로고" 
                             width={48} 
                             height={48} 

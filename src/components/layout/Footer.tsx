@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-3 mb-4">
-                            <Image src="/PIA_Logo.png" alt="PIA 로고" width={40} height={40} className="w-10 h-10 drop-shadow-sm" />
+                            <Image src="/PIA/PIA_Logo.png" alt="PIA 로고" width={40} height={40} className="w-10 h-10 drop-shadow-sm" />
                             <h2 className="text-white text-xl font-bold">한국공인탐정협회</h2>
                         </div>
                         <p className="text-sm leading-relaxed max-w-sm mb-6 text-gray-400">
