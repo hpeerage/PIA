@@ -10,7 +10,7 @@ export default function ShootingPage() {
             <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-deep-blue">
                 <div 
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-overlay"
-                    style={{ backgroundImage: 'url("/images/hero_bg_05.png")' }}
+                    style={{ backgroundImage: 'url("/PIA/images/hero_bg_05.png")' }}
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-blue via-transparent to-black/50"></div>
                 
